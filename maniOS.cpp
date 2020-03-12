@@ -91,7 +91,7 @@ int  main ()   {
 	
 	
 	
-	
+	cout<<"Enter no. of Processes : ";
 	
 
 	
