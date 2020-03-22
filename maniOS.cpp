@@ -89,7 +89,7 @@ void NextShortestJob( int &maintime )  {
 
 int  main ()   {
 	
-	
+	int sum1,sum2;
 	
 	cout<<"Enter no. of Processes : ";
 	
