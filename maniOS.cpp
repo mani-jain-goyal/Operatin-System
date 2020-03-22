@@ -235,5 +235,15 @@ else {
 		cout <<  Processed_pid.at(l) << "\t\t" << Processed_at.at(l) << "\t\t"<< Processed_bt.at(l) << "\t\t" << Processed_ct.at(l) << "\t\t\t" << (Processed_ct.at(l) - Processed_at.at(l))-Processed_bt.at(l) <<endl;
 	}
 	
+	for (int q = 0 ; q < Processed_pid.size() ; ++q) {
+		
+		sum1 = sum1 + Processed_ct.at(q);
+		
+		sum2 = sum2 + ((Processed_ct.at(q) - Processed_at.at(q))-Processed_bt.at(q));
+		
+	}
+	
+	cout<<"\nAverage Completion Time = "<<(sum1/Processed_pid.size())<<"\n\n";
+	cout<<"Average Waiting Time = "<<(sum2/Processed_pid.size())<<"\n\n";
 	
 }
