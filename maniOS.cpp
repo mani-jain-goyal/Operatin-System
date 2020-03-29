@@ -89,7 +89,7 @@ void NextShortestJob( int &maintime )  {
 
 int  main ()   {
 	
-	int sum1,sum2;
+	double sum1,sum2;
 	
 	cout<<"Enter no. of Processes : ";
 	
@@ -245,9 +245,10 @@ else {
 	
 	cout<<Processed_pid.size();
 	
-	double avg_ct_time = (sum1/Processed_pid.size());
+	double avg_ct_time = (double) (sum1/Processed_pid.size());
 	
-	double avg_wt_time = (sum2/Processed_pid.size());
+	double avg_wt_time = (double) (sum2/Processed_pid.size())
+	;
 	
 	cout<<"\nAverage Completion Time = "<<avg_ct_time <<"\n\n";
 	cout<<"Average Waiting Time = "<<avg_wt_time<<"\n\n";
